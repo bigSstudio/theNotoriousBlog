@@ -1,0 +1,152 @@
+.card {
+    display: flex;
+    flex: 1;
+    height: 450px;
+    min-width: 450px;
+
+    box-shadow: $box_shadow;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: $transition;
+    &:hover {
+        box-shadow: $box_shadow_hover;
+
+        .thumbnail {
+            &:after {
+                background: $overlay_lighter;
+            }
+        }
+    }
+    &__lg {
+        flex: 2;
+    }
+    &:first-child {
+        margin-right: 50px;
+    }
+    > a {
+        @include vertical;
+    }
+    .thumbnail {
+        position: relative;
+        height: 280px;
+        min-height: 280px;
+        max-height: 280px;
+        width: 100%;
+
+        overflow: hidden;
+        &:after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            height: 100%;
+            width: 100%;
+
+            background: $overlay_default;
+            z-index: 1;
+            content: '';
+            transition: $transition;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .date {
+            position: absolute;
+            bottom: 20px;
+            left: 30px;
+            z-index: 2;
+
+            font-size: 0.75rem;
+            font-weight: $semibold_sec;
+        }
+        .ribbon {
+            position: absolute;
+            top: 20px;
+            right: -70px;
+
+            width: 200px;
+            padding: 5px;
+            transform: rotate(45deg);
+            z-index: 2;
+
+            background-color: $accent_color;
+            box-shadow: $box_shadow;
+
+            font-size: 0.75rem;
+            line-height: 25px;
+            font-weight: $semibold_sec;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+}
+
+.card_content {
+    @include vertical;
+    padding: 10px 30px;
+    height: 100%;
+    h4 {
+        max-width: 80%;
+        margin-bottom: 5px;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
+        font-size: 1.25rem;
+        line-height: 1.5;
+        color: $dark_color;
+    }
+    p {
+        max-width: 80%;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
+        font-size: 0.875rem;
+        line-height: 1.5;
+        color: $dark_color;
+        font-weight: $semibold_sec;
+
+        opacity: .8;
+    }
+}
+
+.card_meta {
+    display: flex;
+    margin-top: auto;
+    padding-bottom: 10px;
+    > div {
+        display: flex;
+        align-items: center;
+        &:not(:first-child) {
+            margin-left: 10px;
+        }
+        .nb_i {
+            height: 16px;
+            margin-right: 3px;
+        }
+        span {
+            font-size: 0.75rem;
+            color: $dark_color;
+            font-weight: $semibold_sec;
+        }
+    }
+    .read_more {
+        margin-right: auto;
+        .nb_i {
+            margin-left: 10px;
+            margin-right: 0;
+        }
+        span {
+            text-transform: uppercase;
+        }
+    }
+}

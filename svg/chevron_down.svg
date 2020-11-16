@@ -1,0 +1,13 @@
+<svg id="arrow_chevron_big_down" data-name="arrow / chevron_big_down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="arrow_chevron_big_down_Background_Mask_" data-name="arrow / chevron_big_down (Background/Mask)" width="16" height="16" fill="rgba(0,0,0,0)"/>
+    </clipPath>
+  </defs>
+  <g id="arrow_chevron_big_down-2" data-name="arrow / chevron_big_down">
+    <rect id="arrow_chevron_big_down_Background_Mask_2" data-name="arrow / chevron_big_down (Background/Mask)" width="16" height="16" fill="rgba(0,0,0,0)"/>
+    <g id="arrow_chevron_big_down-3" data-name="arrow / chevron_big_down" clip-path="url(#clip-path)">
+      <path id="arrow_chevron_big_down-4" data-name="arrow / chevron_big_down" d="M5.657,0,0,5.657l5.657,5.657.943-.943L1.886,5.657,6.6.943Z" transform="translate(2.343 11.3) rotate(-90)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

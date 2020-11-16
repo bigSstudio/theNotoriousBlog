@@ -1,0 +1,23 @@
+.dropdown {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+
+    left: -20px;
+    width: 150px;
+    padding: 10px 20px;
+    transition: $transition;
+    overflow: hidden;
+    ul {
+        @include vertical;
+        align-items: flex-start;
+    }
+    li {
+        position: relative;
+        padding-top: 10px;
+        &:not(:first-child) {
+            margin-left: 0;
+        }
+    }
+}

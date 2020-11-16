@@ -1,0 +1,13 @@
+<svg id="arrow_short_left" data-name="arrow / short_left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="arrow_short_left_Background_Mask_" data-name="arrow / short_left (Background/Mask)" width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="arrow_short_left-2" data-name="arrow / short_left">
+    <rect id="arrow_short_left_Background_Mask_2" data-name="arrow / short_left (Background/Mask)" width="24" height="24" fill="none"/>
+    <g id="arrow_short_left-3" data-name="arrow / short_left" clip-path="url(#clip-path)">
+      <path id="arrow_short_left-4" data-name="arrow / short_left" d="M3.83,5,7.41,1.41,6,0,0,6l6,6,1.41-1.41L3.83,7H16V5Z" transform="translate(4 6)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

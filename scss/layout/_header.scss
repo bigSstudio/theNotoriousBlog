@@ -1,0 +1,49 @@
+header {
+    @include horizontal;
+    align-items: center;
+    justify-content: center;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+    &.header {
+        transition: $transition;
+        &.scrolled_nav {
+            min-height: 50px;
+            background: rgba($dark_color, .8);
+            .nav_wrap > a {
+                img {
+                    height: 30px;
+                }
+            }
+            .dropdown {
+                background: rgba($dark_color, .8);
+            }
+        }
+    }
+}
+
+.nav_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1200px;
+    height: 100px;
+
+    padding: 0 16px;
+    
+    > a {
+        img {
+            height: 50px;
+            width: auto;
+            transition: $transition;
+        }
+    }
+}

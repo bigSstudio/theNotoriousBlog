@@ -1,0 +1,103 @@
+/* playfair-display-regular - latin */
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/playfair-display-v21-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('/fonts/playfair-display-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/playfair-display-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/playfair-display-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/playfair-display-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/playfair-display-v21-latin-regular.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+  }
+  /* playfair-display-700 - latin */
+  @font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/playfair-display-v21-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('/fonts/playfair-display-v21-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/playfair-display-v21-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/playfair-display-v21-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/playfair-display-v21-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/playfair-display-v21-latin-700.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-family: 'SFProDisplay';
+    src: url('/fonts/SFProDisplay-Regular.eot');
+    src: local('SFProDisplay Regular'), local('SFProDisplay-Regular'),
+        url('/fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('/fonts/SFProDisplay-Regular.woff') format('woff'),
+        url('/fonts/SFProDisplay-Regular.ttf') format('truetype'),
+        url('/fonts/SFProDisplay-Regular.svg#SFProDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('/fonts/SFProDisplay-Bold.eot');
+    src: local('SFProDisplay Bold'), local('SFProDisplay-Bold'),
+        url('/fonts/SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/SFProDisplay-Bold.woff2') format('woff2'),
+        url('/fonts/SFProDisplay-Bold.woff') format('woff'),
+        url('/fonts/SFProDisplay-Bold.ttf') format('truetype'),
+        url('/fonts/SFProDisplay-Bold.svg#SFProDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('/fonts/SFProDisplay-Medium.eot');
+    src: local('SFProDisplay Medium'), local('SFProDisplay-Medium'),
+        url('/fonts/SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/SFProDisplay-Medium.woff2') format('woff2'),
+        url('/fonts/SFProDisplay-Medium.woff') format('woff'),
+        url('/fonts/SFProDisplay-Medium.ttf') format('truetype'),
+        url('/fonts/SFProDisplay-Medium.svg#SFProDisplay-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font_secondary;
+}
+h2 {
+    font-size: 38px;
+}
+a {
+    font-size: 0.875rem;
+    font-weight: $semibold_sec;
+    text-decoration: none;
+    color: $color_white;
+    li & {
+        text-transform: uppercase;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+.nb_i {
+    height: 24px;
+    width: 24px;
+    margin: 0;
+
+    fill: $dark_color;
+    transition: $transition;
+}

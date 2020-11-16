@@ -1,0 +1,52 @@
+nav {
+    @include horizontal;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50px;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        
+        list-style: none;
+    }
+    li {
+        position: relative;
+        height: 100%;
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+        &:hover {
+            .dropdown {
+                display: flex;
+            }
+        }
+    }
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        line-height: 2;
+        height: 100%;
+
+        border-bottom: 4px solid transparent;
+        transition: $transition;
+
+        color: $color_white;
+        .nb_i {
+            height: 16px;
+            margin-left: 5px;
+            fill: $color_white;
+        }
+        &:hover,
+        &.active_link {
+            color: $primary_color;
+            border-bottom: 4px solid $primary_color;
+            .nb_i {
+                fill: $primary_color;
+            }
+        }
+    }
+}

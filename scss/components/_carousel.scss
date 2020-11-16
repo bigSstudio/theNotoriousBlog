@@ -1,0 +1,136 @@
+.hero_carousel {
+    position: relative;
+    max-height: 100%;
+    width: 100%;
+
+    > .nb_i {
+        position: absolute;
+        bottom: calc(20% - 70px);
+        right: calc(25% + 30px);
+        transform: translate(-50%, 0);
+
+        height: 50px;
+        width: 50px;
+        padding: 15px;
+        margin: 0;
+
+        fill: $color_white;
+        border: 1px solid $color_white;
+
+        transition: $transition;
+        cursor: pointer;
+        z-index: 1;
+        
+        &.slick_prev {
+            right: calc(25% + 90px);
+            transform: translate(-50%, 0) rotate(180deg); // Icon was messed up for some reason, that's why I used the same icon and rotated the previous one
+        }
+        
+        &:hover,
+        &:active,
+        &:focus {
+            opacity: .75;
+        }
+    }
+}
+.single_slide {
+    position: relative;
+    max-height: 100%;
+    width: 100%;
+    img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+
+        filter: contrast(1.75) brightness(.25);
+    }
+    .inner_slide_wrap {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 16px;
+    }
+    .article_description {
+        a {
+            @include vertical;
+            width: 50%;
+        }
+        .date {
+            font-size: 0.875rem;
+            color: $color_gray;
+            font-weight: $semibold_sec;
+            text-shadow: $text_shadow;
+
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        .article_title {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            border-left: 2px solid $primary_color;
+            h2 {
+                font-size: 2.375rem;
+                color: $color_white;
+                text-transform: uppercase;
+                text-shadow: $text_shadow;
+    
+                line-height: 1.35;
+                transition: $transition;
+            }
+        }
+        .article_intro {
+            padding-left: 20px;
+            p {
+                font-size: 1.125rem;
+                color: $color_white;
+                font-weight: $regular;
+                text-shadow: $text_shadow;
+
+                line-height: 1.35;
+                margin-bottom: 20px;
+            }
+            .cta {
+                display: flex;
+                align-items: center;
+                span {
+                    color: $color_white;
+                    font-size: 0.875rem;
+                    text-transform: uppercase;
+                    text-shadow: $text_shadow;
+
+                    margin-right: 15px;
+                    transition: $transition;
+                }
+                .nb_i {
+                    fill: $color_white;
+                    height: 24px;
+                    max-width: 24px;
+                    transition: $transition;
+                }
+            }
+        }
+        &:hover {
+            .article_title {
+                h2 {
+                    color: $primary_color;
+                }
+            }
+            .article_intro {
+                .cta {
+                    span {
+                        color: $primary_color;
+                    }
+                    .nb_i {
+                        fill: $primary_color;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    height: auto;
+    width: 100%;
+
+    background: rgba($secondary_color, .1);
+}
